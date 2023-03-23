@@ -21,5 +21,12 @@ public void test_AlAcelerarCoche_SuVelocidad_Aumenta() {
 	Assert.assertEquals(30, nuevoCoche.velocidad);
 	}
 
+@Test
+public void test_AlDecelerarCoche_SuVelocidad_Disminuye() {
+	Coche nuevoCoche = new Coche();
+	nuevoCoche.velocidad = 50;
+	nuevoCoche.decelerar(80);
+	Assert.assertEquals(0, nuevoCoche.velocidad);
+	}
 }
  
